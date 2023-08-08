@@ -22,6 +22,7 @@
 {{ block "main" . }}
 {{ .Content }}
 {{ end }}
+{{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
 </article>
 </main>
 {{ block "footer" . }}
